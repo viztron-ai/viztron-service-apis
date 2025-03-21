@@ -1,3 +1,22 @@
+## Viztron Service APIs
+This repository contains the backend service APIs for Viztron, handling core business logic, authentication, data processing, and integrations. Built with Node.js, Express.js, and Supabase (PostgreSQL as the primary database), it ensures scalability and efficiency. Additionally, MongoDB is used for specific data handling needs.
+
+## Features:
+- Supabase as the primary database (PostgreSQL) for structured data management
+- MongoDB for secondary data storage where needed
+- Authentication & Authorization powered by Supabase User Management
+- RESTful APIs for managing users, orders, and business operations
+- Real-time updates with WebSockets (if applicable)
+- Optimized performance with caching and rate limiting
+- Secure & Scalable architecture
+
+## Tech Stack:
+* Node.js, Express.js
+* Supabase (PostgreSQL) – Primary Database
+* MongoDB / Mongoose – Secondary Database
+* Redis / Caching (if applicable)
+* Docker & Kubernetes (if applicable)
+* Jest/Mocha for testing
 
 Install the dependencies:
 
@@ -27,9 +46,8 @@ cp .env.example .env
 - [Logging](#logging)
 - [Custom Mongoose Plugins](#custom-mongoose-plugins)
 - [Linting](#linting)
-- [Contributing](#contributing)
 
-## Features
+## Core of Repo:
 - **Supabase Auth**": Supabase as User Authentication
 - **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
 - **Authentication and authorization**: using [passport](http://www.passportjs.org)
